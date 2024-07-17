@@ -94,3 +94,80 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  background-color: #333; /* Dark background for the navbar */
+  color: #fff;
+  height: 60px; /* Set the height of the navbar */
+  line-height: 60px; /* Align the text vertically */
+}
+
+.navbar-container {
+  max-width: 1200px; /* Max width of the content inside the navbar */
+  margin: 0 auto; /* Center the navbar content */
+  display: flex;
+  justify-content: space-between; /* Space out logo and nav items */
+  align-items: center;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 20px; /* Padding on the left of the logo */
+}
+
+.nav-menu {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Display nav items in a row */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 0 15px; /* Spacing between nav items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover
+
+.nav-link:focus {
+  color: #f0f0f0; /* Lighter color on hover/focus */
+}
+
+/* navbar.css */
+
+.navbar {
+  background-color: #333; /* Dark background for the navbar */
+  color: #fff;
+  height: 60px; /* Set the height of the navbar */
+  line-height: 60px; /* Align the text vertically */
+  width: 100%; /* Ensure the navbar spans the full width */
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  top: 0; /* Position the navbar at the very top */
+  left: 0; /* Align the navbar to the left edge */
+  z-index: 1000; /* Ensure the navbar stays above other content */
+}
+
+.navbar-container {
+  max-width: 1200px; /* Max width of the content inside the navbar */
+  margin: 0 auto; /* Center the navbar content */
+  display: flex;
+  justify-content: space-between; /* Space out logo and nav items */
+  align-items: center;
+  padding: 0 20px; /* Add padding on the sides */
+}
+
+.main-content {
+  padding-top: 60px; /* This should be equal to the height of the navbar */
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,7 +1,12 @@
-import './style.css'
+// main.js
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <h1>Coming soon...</h1>
-  </div>
-`
+import './style.css'
+import { createNavBar } from './navbar.js';
+import { createHeroSection } from './hero.js';
+import { createAboutSection } from './about.js';
+
+document.querySelector('#app').innerHTML =
+  createNavBar() +
+  createHeroSection() +
+  createAboutSection()
+;
