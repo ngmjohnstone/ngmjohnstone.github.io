@@ -4,8 +4,6 @@ const navLogoText = 'ngmjohnstone.github.io';
 const navItems = [
   { href: '#about', text: 'About Me' },
   { href: '#blog', text: 'Blog' },
-  { href: '#portfolio', text: 'Portfolio' },
-  { href: '#contact', text: 'Contact' }
 ];
 
 function createNavBar() {

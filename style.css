@@ -13,6 +13,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links */
 a {
   font-weight: 500;
   color: #646cff;
@@ -22,6 +34,7 @@ a:hover {
   color: #535bf2;
 }
 
+/* Body */
 body {
   margin: 0;
   display: flex;
@@ -30,84 +43,33 @@ body {
   min-height: 100vh;
 }
 
+/* Titles */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
+/* Navbar */
 .navbar {
-  background-color: #333; /* Dark background for the navbar */
+  background-color: #333;
   color: #fff;
-  height: 60px; /* Set the height of the navbar */
-  line-height: 60px; /* Align the text vertically */
+  height: 60px;
+  line-height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .navbar-container {
-  max-width: 1200px; /* Max width of the content inside the navbar */
-  margin: 0 auto; /* Center the navbar content */
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Space out logo and nav items */
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
+  flex-wrap: nowrap;
 }
 
 .nav-logo {
@@ -115,18 +77,24 @@ button:focus-visible {
   color: #fff;
   font-size: 1.5em;
   font-weight: bold;
-  padding-left: 20px; /* Padding on the left of the logo */
+  padding-left: 20px;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
 }
 
 .nav-menu {
-  list-style: none; /* Remove default list styling */
-  display: flex; /* Display nav items in a row */
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: nowrap;
 }
 
 .nav-item {
-  padding: 0 15px; /* Spacing between nav items */
+  padding: 0 15px;
+  flex-shrink: 0;
+  display: flex;
 }
 
 .nav-link {
@@ -135,39 +103,27 @@ button:focus-visible {
   transition: color 0.3s ease;
 }
 
-.nav-link:hover
-
+.nav-link:hover,
 .nav-link:focus {
-  color: #f0f0f0; /* Lighter color on hover/focus */
+  color: #f0f0f0;
 }
 
-/* navbar.css */
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 10px;
+  }
 
-.navbar {
-  background-color: #333; /* Dark background for the navbar */
-  color: #fff;
-  height: 60px; /* Set the height of the navbar */
-  line-height: 60px; /* Align the text vertically */
-  width: 100%; /* Ensure the navbar spans the full width */
-  position: fixed; /* Fix the navbar to the top of the viewport */
-  top: 0; /* Position the navbar at the very top */
-  left: 0; /* Align the navbar to the left edge */
-  z-index: 1000; /* Ensure the navbar stays above other content */
-}
+  .nav-logo {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
 
-.navbar-container {
-  max-width: 1200px; /* Max width of the content inside the navbar */
-  margin: 0 auto; /* Center the navbar content */
-  display: flex;
-  justify-content: space-between; /* Space out logo and nav items */
-  align-items: center;
-  padding: 0 20px; /* Add padding on the sides */
-}
+  .nav-item {
+    padding: 0 10px;
+  }
 
-.main-content {
-  padding-top: 60px; /* This should be equal to the height of the navbar */
-}
-
-html {
-  scroll-behavior: smooth;
+  .nav-link {
+    font-size: 0.9em;
+  }
 }
