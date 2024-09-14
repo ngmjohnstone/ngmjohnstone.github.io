@@ -2,7 +2,10 @@
 
 const aboutTitle = 'About Me';
 const profileImageUrl = '/favicon.png';
-const aboutText = `Updates coming soon...`;
+const aboutText = `
+  Software engineer with professional experience in both public and private sectors,
+  utilising a wide range of technologies and programming languages, and a passion for functional programming.
+  `;
 
 function createAboutSection() {
     const aboutSectionHTML = `
