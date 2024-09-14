@@ -3,7 +3,7 @@
 const navLogoText = 'ngmjohnstone.github.io';
 const navItems = [
   { href: '#about', text: 'About Me' },
-  { href: '#blog', text: 'Blog' },
+  // { href: '#blog', text: 'Blog' },
 ];
 
 function createNavBar() {
