@@ -3,13 +3,16 @@
 const navLogoText = 'ngmjohnstone.github.io';
 const navItems = [
   { href: '#about', text: 'About Me' },
+  { href: '#charity', text: 'Charity' },
   // { href: '#blog', text: 'Blog' },
 ];
 
 function createNavBar() {
 
   const navMenuItemsHTML = navItems.map(item => `
-    <li class="nav-item"><a href="${item.href}" class="nav-link">${item.text}</a></li>
+    <li class="nav-item">
+      <a href="${item.href}" class="nav-link">${item.text}</a>
+    </li>
   `).join('');
 
   const navBarHTML = `
