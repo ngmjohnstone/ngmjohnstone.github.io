@@ -69,3 +69,27 @@ body {
 .header-container .text {
   flex-grow: 1;
 }
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.projects-table th, .projects-table td {
+  border: 1px solid #444;
+  padding: 10px;
+  text-align: left;
+}
+
+.projects-table th {
+  background-color: #333;
+}
+
+.projects-table tr:nth-child(even) {
+  background-color: #2a2a2a;
+}
+
+.projects-table tr:hover {
+  background-color: #444;
+}
