@@ -45,14 +45,6 @@ body {
   min-height: 100vh;
 }
 
-#ascii-header {
-  background: linear-gradient(135deg, #00ff4c, #ff9ddb);
-  background-clip: #242424;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-}
-
 /* Header */
 .header-container {
   display: flex;
@@ -70,6 +62,15 @@ body {
   flex-grow: 1;
 }
 
+#ascii-header {
+  background: linear-gradient(135deg, #00ff4c, #ff9ddb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+/* Projects */
 .projects-table {
   width: 100%;
   border-collapse: collapse;
