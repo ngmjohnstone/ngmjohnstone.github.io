@@ -1,6 +1,5 @@
 // main.js
 
-import './style.css'
 import { createHeaderSection } from './header.js';
 import { createAboutSection } from './about.js';
 import { createCharitySection } from './charity.js';
