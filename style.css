@@ -25,6 +25,20 @@ hr {
   border-color: var(--dirt);
 }
 
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  background: var(--dirt);
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradient-animation 0.7s infinite;
+}
+
 
 #app {
   background-color: var(--clay);

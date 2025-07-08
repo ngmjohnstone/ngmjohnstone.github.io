@@ -6,7 +6,7 @@ function createNavSection() {
   const headerSectionHtml = `
     <nav>
       <ul>
-        <a><li>[Home]</li></a>
+        <li><a href="/">[Home]</a></li>
         <li>[B]</li>
         <li>[C]</li>
       </ul>
