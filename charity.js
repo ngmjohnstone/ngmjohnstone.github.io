@@ -1,8 +1,7 @@
 // charity.js
 
-const charityTitle = 'Charity';
 const charityText = `
-  I enjoy fundraising for charities through distance running.
+  I also enjoy fundraising for charities through distance running.
   Here are some of the charities I've raised money for over the years:
   `;
 
@@ -37,18 +36,17 @@ const charities = [
 function createCharitySection() {
 
     const charityItemHtml = charities.map(charityItem => `
-        <a href="${charityItem.url}" target="_blank">
-            <li>
-                ${charityItem.name}
-            </li>
-        </a>
+        <li>
+            <a href="${charityItem.url}" target="_blank">
+                <span class="li-span">${charityItem.name}</span>
+            </a>
+        </li>
     `).join(' ');
 
     const charitySectionHtml = `
-      <div id="charity">
-        <h2>${charityTitle}</h2>
+      <div class="section-container" id="charity">
         <p>${charityText}</p>
-        <ul>
+        <ul class="list-container">
             ${charityItemHtml}
         </ul>
       </div>

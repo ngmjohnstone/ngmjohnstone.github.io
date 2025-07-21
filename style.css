@@ -1,95 +1,152 @@
 :root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-  font-family: monospace;
+  /* Text */
+  font-family: 'Monaco', monospace;
+  color: var(--dirt);
+
+  /* Colour */
+  --background-color: rgba(36, 36, 36, 1);
+  --naranja: rgba(255, 192, 31, 0.877);
+  --white: rgba(255, 255, 255, 0.87);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  --clay: rgba(255, 137, 46, 0.441);
+  --dirt: rgba(39, 17, 0, 0.9);
+
+}
+
+/* Other core styles / behaviours */
+#app {
+  background-color: var(--clay);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-#app {
-  width: 1024px;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+body {
+  background-color: var(--dirt);
+}
+
+hr {
+  border-color: var(--dirt);
 }
 
 /* Links */
 a {
-  font-weight: 500;
-  color: #00ff4c;
+  color: var(--white);
   text-decoration: none;
 }
+
 a:hover {
-  color: #ff9ddb;
-}
-
-footer p {
-  font-weight: 500;
-  color: #ff9ddb;
-}
-
-footer p:hover {
-  color: #00ff4c;
-}
-
-/* Body */
-body {
-  margin: 10;
-  display: flex;
-  place-items: start; 
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-#ascii-header {
-  background: linear-gradient(135deg, #00ff4c, #ff9ddb);
-  background-clip: #242424;
+  background: var(--dirt);
+  background-clip: text; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center;
+  animation: gradient-animation 0.7s infinite;
 }
 
 /* Header */
 .header-container {
   display: flex;
   align-items: center;
+  font-size: 2em; 
+  text-align: left;
+  flex-grow: 1;
 }
 
 .header-container .image {
-  width: 128px;
-  height: auto;
+  margin-right: 10px;
+  width: auto;
+  height: 2.5em;
   margin-right: 10px;
   border-radius: 8px;
 }
 
 .header-container .text {
-  flex-grow: 1;
+  background: var(--dirt);
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 
-.projects-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.header-container .text:hover {
+  animation: gradient-animation 0.7s infinite;
 }
 
-.projects-table th, .projects-table td {
-  border: 1px solid #444;
-  padding: 10px;
-  text-align: left;
+/* Funky animation for links */
+@keyframes gradient-animation {
+  0% {
+      background: linear-gradient(135deg, #00ff4c, #ff9ddb);
+      background-clip: text;
+      -webkit-background-clip: text;
+  }
+  12.5% {
+      background: linear-gradient(180deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  25% {
+      background: linear-gradient(225deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  37.5% {
+      background: linear-gradient(270deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  50% {
+      background: linear-gradient(315deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  62.5% {
+      background: linear-gradient(360deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  75% {
+      background: linear-gradient(45deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  87.5% {
+      background: linear-gradient(90deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
+  100% {
+      background: linear-gradient(135deg, #00ff4c, #ff9ddb);
+      background-clip: text; 
+      -webkit-background-clip: text;
+  }
 }
 
-.projects-table th {
-  background-color: #333;
+/* Nav */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
 }
 
-.projects-table tr:nth-child(even) {
-  background-color: #2a2a2a;
+/* Section */
+.section-container h2 {
+  color: var(--naranja);
 }
 
-.projects-table tr:hover {
-  background-color: #444;
+/* Lists */
+.li-span:hover {
+  color: var(--white);
+  background: var(--naranja);
+  background-clip: text; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
