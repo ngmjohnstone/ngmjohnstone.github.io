@@ -1,12 +1,15 @@
 // footer.js
 
-const footerText = `Last updated Feb 2025`;
+const footerText = `Last updated Jul 2025`;
 
 function createFooterSection() {
     const footerSectionHTML = `
-      <footer>
+      <footer class="section-container">
         <br>
-          <p>${footerText}</p>
+        <hr>
+        <p>
+            ${footerText}
+        </p>
       </footer>
     `;
     return footerSectionHTML;
