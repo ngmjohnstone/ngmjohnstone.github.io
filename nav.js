@@ -12,9 +12,6 @@ function createNavSection() {
         <li>
           <a href="#blog">[Blog]</a>
         </li>
-        <li>
-          <a href="#projects">[Projects]</a>
-        </li>
       </ul>
     </nav>
     <hr>
