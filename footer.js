@@ -3,7 +3,7 @@
 const path = `ngmjohnstone/ngmjohnstone.github.io`;
 async function fetchLatestCommit() {
   try {
-      const response = await fetch(`https://api.github.com/repos/` + path + `/commits`);
+      const response = await fetch(`https://api.github.com/repos/` + path + `/commits?sha=main&per_page=1`);
       const commits = await response.json();
       if (commits.length > 0) {
         const options = { day: '2-digit', month: 'short', year: 'numeric' }
