@@ -5,6 +5,9 @@ const profileImageUrl = '/favicon.png';
 function createNavSection() {
   const navHtml = `
     <nav>
+      <div class="theme-toggle-container">
+        <a href="#" id="theme-toggle"></a>
+      </div>
       <div class="nav-section">
         <h3>Navigation</h3>
         <ul>
