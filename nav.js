@@ -3,20 +3,23 @@
 const profileImageUrl = '/favicon.png';
 
 function createNavSection() {
-  const headerSectionHtml = `
+  const navHtml = `
     <nav>
-      <ul>
-        <li>
-          <a href="/">[Home]</a>
-        </li>
-        <li>
-          <a href="#blog">[Blog]</a>
-        </li>
-      </ul>
+      <div class="theme-toggle-container">
+        <a href="#" id="theme-toggle"></a>
+      </div>
+      <div class="nav-section">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/">[Home]</a></li>
+          <li><a href="#about">[About]</a></li>
+          <li><a href="#charity">[Charity]</a></li>
+          <li><a href="#blog">[Blog]</a></li>
+        </ul>
+      </div>
     </nav>
-    <hr>
   `;
-  return headerSectionHtml;
+  return navHtml;
 }
 
 export { createNavSection };

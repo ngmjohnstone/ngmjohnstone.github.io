@@ -34,6 +34,7 @@ const charities = [
 ];
 
 function createCharitySection() {
+    const charityTitle = 'Charity';
 
     const charityItemHtml = charities.map(charityItem => `
         <li>
@@ -44,12 +45,13 @@ function createCharitySection() {
     `).join(' ');
 
     const charitySectionHtml = `
-      <div class="section-container" id="charity">
+      <section class="section-container" id="charity">
+        <h2>${charityTitle}</h2>
         <p>${charityText}</p>
         <ul class="list-container">
             ${charityItemHtml}
         </ul>
-      </div>
+      </section>
     `;
     return charitySectionHtml;
   }

@@ -8,10 +8,10 @@ const aboutText = `
 
 function createAboutSection() {
     const aboutSectionHTML = `
-      <div class="section-container" id="about">
+      <section class="section-container" id="about">
         <h2>${aboutTitle}</h2>
         <p>${aboutText}</p>
-      </div>
+      </section>
     `;
     return aboutSectionHTML;
   }

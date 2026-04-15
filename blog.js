@@ -7,10 +7,10 @@ const blogText = `
 
 function createBlogSection() {
     const blogSectionHtml = `
-      <div class="section-container" id="blog">
+      <section class="section-container" id="blog">
         <h2>${blogTitle}</h2>
         <p>${blogText}</p>
-      </div>
+      </section>
     `;
     return blogSectionHtml;
   }
