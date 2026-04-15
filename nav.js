@@ -14,13 +14,6 @@ function createNavSection() {
           <li><a href="#blog">[Blog]</a></li>
         </ul>
       </div>
-      <br>
-      <div class="nav-section">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="https://github.com/ngmjohnstone" target="_blank">[GitHub]</a></li>
-        </ul>
-      </div>
     </nav>
   `;
   return navHtml;
