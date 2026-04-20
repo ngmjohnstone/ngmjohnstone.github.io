@@ -7,8 +7,16 @@ const charityText = `
 
 const charities = [
     {
+        name: "Arthritis UK",
+        url: "https://www.arthritis-uk.org/",
+    },
+    {
         name: "Bowel Cancer UK",
         url: "https://www.bowelcanceruk.org.uk/",
+    },
+    {
+        name: "EY Foundation",
+        url: "https://www.eyfoundation.com/en_uk/",
     },
     {
         name: "The Felix Project",
@@ -20,16 +28,11 @@ const charities = [
     },
     {
         name: "The Royal Marsden Cancer Charity",
-        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP448jCHxumztAsgNpnUGf27D9LP11FhI7JA&s",
         url: "https://www.royalmarsden.org/",
     },
     {
         name: "Shelter",
         url: "https://www.shelter.org.uk/",
-    },
-    {
-        name: "Versus Arthritis",
-        url: "https://www.versusarthritis.org/",
     },
 ];
 
