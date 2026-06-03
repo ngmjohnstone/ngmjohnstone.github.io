@@ -1,26 +1,20 @@
 // blog.js
 
+const substackProfileUrl = 'https://substack.com/@ngmjohnstone';
 const blogTitle = 'Blog';
-const blogText = `
-    Stay tuned 👀
-`;
 
 function createBlogSection() {
     const blogSectionHtml = `
       <section class="section-container" id="blog">
         <h2>${blogTitle}</h2>
-        <p>${blogText}</p>
+        <p>
+          <a href="${substackProfileUrl}" target="_blank" rel="noopener noreferrer">
+            [Read my posts on Substack]
+          </a>
+        </p>
       </section>
     `;
     return blogSectionHtml;
   }
-
-//   <ul>
-//   <li>
-//       <a href="/blog/test.html">
-//           [Test]
-//       </a>
-//   </li>
-//   </ul>
 
 export { createBlogSection };
